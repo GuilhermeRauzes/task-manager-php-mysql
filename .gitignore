@@ -1,0 +1,31 @@
+# Arquivos de log
+*.log
+
+# Diretórios do XAMPP (caso esteja utilizando) ou outros servidores locais
+/xampp/tmp/
+/xampp/mysql/
+/xampp/htdocs/projeto-facul/
+
+# Arquivos de configuração local, como o .env (caso o projeto use algum arquivo .env)
+.env
+
+# Banco de dados SQLite, se for usado em vez de MySQL (não é o caso, mas vale para outros projetos)
+*.sqlite
+*.db
+
+# Arquivos gerados pelo Composer (caso você esteja usando o Composer)
+vendor/
+
+# Diretórios do sistema (Mac, Windows, etc)
+.DS_Store         # Para MacOS
+Thumbs.db         # Para Windows
+
+# Outros arquivos de configuração do editor (Ex: VSCode, Sublime Text, etc)
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Pasta de cache e logs
+cache/
+logs/
