@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ProjetoFacul</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Cadastro de Usuário</h2>
+
+        <!-- Verificar a mensagem na URL -->
+        <div id="message"></div>
+
+        <form action="includes/register.php" method="POST" id="register-form">
+            <div class="form-group">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" class="form-control" name="username" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" name="password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirmar Senha</label>
+                <input type="password" class="form-control" name="confirm_password" id="confirm_password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+        </form>
+        <a href="index.html" class="btn btn-secondary btn-lg mt-3">Voltar para o Início</a>
+        <p class="text-center mt-3">Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

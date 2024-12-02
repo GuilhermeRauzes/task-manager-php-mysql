@@ -1,0 +1,118 @@
+/* Global */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Container central */
+.container {
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #007bff;
+    padding: 40px 0;
+}
+
+/* Texto do container */
+.container p {
+    color: #6c757d;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Botões */
+.btn-primary, .btn-secondary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Faz os botões se comportarem como blocos */
+    margin: 0 auto; /* Centraliza os botões */
+}
+
+/* Efeito ao passar o mouse */
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Botão de registro */
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+/* Link */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mensagens de erro ou sucesso */
+.alert {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Mensagens de erro */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Mensagens de sucesso */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+/* Centralizar botões no formulário */
+.form-group .btn {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 300px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o botão */
+    display: block; /* Faz o botão se comportar como um bloco, para que a centralização funcione */
+}
+
+/* Ajuste para botões em outras áreas, caso necessário */
+.btn-lg {
+    font-size: 18px; /* Aumentar o tamanho do botão */
+    padding: 12px 20px; /* Aumentar o padding para dar mais "espaço" ao botão */
+}
+
+/* Centralizar botões na página inicial */
+.text-center .btn {
+    display: block; /* Para garantir que os botões fiquem centralizados */
+    margin: 0 auto 10px; /* Centraliza os botões e adiciona espaço entre eles */
+}
