@@ -1,52 +1,39 @@
-# Gerenciador de Tarefas - Projeto de Faculdade
+Gerenciador de Tarefas - Projeto de Faculdade
+Este é um gerenciador de tarefas simples, desenvolvido em PHP e MySQL, como parte de um projeto de faculdade. O sistema permite que os usuários possam criar, editar, excluir e visualizar tarefas, com um sistema básico de autenticação.
 
-Este é um simples gerenciador de tarefas feito com PHP e MySQL, desenvolvido como parte de um projeto de faculdade. Ele permite criar, editar e excluir tarefas, com autenticação simples de usuários.
+Funcionalidades
+Cadastro e login de usuários
 
-## Requisitos
+Criação, edição e exclusão de tarefas
 
-- PHP 7.x ou superior
-- MySQL ou MariaDB
-- XAMPP ou qualquer servidor local com suporte a PHP e MySQL
+Visualização de todas as tarefas
 
-## Como rodar o projeto
+Requisitos
+PHP 7.x ou superior
 
-### 1. **Clone o repositório**:
-   Clone este repositório para o seu computador utilizando o Git:
+MySQL ou MariaDB
 
-   ```bash
-   git clone https://github.com/GuilhermeRauzes/ProjetoFullStack.git
+XAMPP ou qualquer servidor local com suporte a PHP e MySQL
 
-2. Configuração do Banco de Dados
-O projeto utiliza um banco de dados MySQL chamado ProjetoFacul, com duas tabelas principais: users (para armazenar os dados de login dos usuários) e tasks (para armazenar as tarefas dos usuários).
+Como rodar o projeto
+1. Clone o repositório:
+Clone este repositório para o seu computador utilizando o Git:
+git clone https://github.com/GuilhermeRauzes/task-manager-php-mysql.git
 
-Passo 1: Criar o Banco de Dados
-Abra o MySQL Workbench ou qualquer cliente MySQL de sua preferência.
-Execute o seguinte comando para criar o banco de dados:
-sql
-Copiar código
-CREATE DATABASE ProjetoFacul;
-Passo 2: Criar as Tabelas
-Depois de criar o banco de dados, crie as tabelas users e tasks. Execute os seguintes comandos SQL:
+3. Banco de Dados:
+O projeto já possui um banco de dados MySQL configurado com as tabelas necessárias (users e tasks). Caso você precise configurar o banco de dados manualmente, siga as instruções abaixo (se aplicável):
 
-sql
-Copiar código
--- Tabela de Usuários
-CREATE TABLE `users` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+Banco de Dados: ProjetoFacul
 
--- Tabela de Tarefas
-CREATE TABLE `tasks` (
-  `task_id` int NOT NULL AUTO_INCREMENT,
-  `user_id` int NOT NULL,
-  `task` text NOT NULL,
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`task_id`),
-  KEY `user_id` (`user_id`),
-  CONSTRAINT `tasks_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-Essas duas tabelas são essenciais para o funcionamento do sistema. A tabela users armazena os dados de login (nome de usuário e senha), enquanto a tabela tasks guarda as tarefas associadas a cada usuário.
+Tabelas: users (para dados de login) e tasks (para as tarefas associadas aos usuários).
+
+3. Configuração do Servidor Local:
+Se você estiver utilizando o XAMPP (ou outra solução local), basta colocar o projeto na pasta apropriada e garantir que o servidor Apache e MySQL estejam rodando.
+
+Tecnologias Usadas
+PHP para a lógica de backend
+
+MySQL para o armazenamento de dados
+
+HTML e CSS para o frontend
+
